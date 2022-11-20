@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+footer{
+    text-align: center;
+    background-color: #333333;
+}
+
+section{
+    border: 5px #fff solid;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+#navbar a{
+    color: #fff;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+.content{
+    padding: 10px;
+}
+
+#movies{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px;
+    font-size: larger;
+}
+
+#movies h2{
+    justify-content: center;
+    align-self: center;
+}
+
+#colors{
+    display: grid;
+    grid-template-columns: repeat(4, [col] 100px);
+    grid-template-rows: repeat(4, [row] auto);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#colors h3{
+    padding: 10px;
+    margin: 0;
+}
+
+#black{
+    grid-column: col 1/span 4;
+    grid-row: row 1;
+    background-color: black;
+    border: 1px #fff solid;
+}
+
+#green{
+    grid-column: col 1/span 2;
+    grid-row: row 2;
+    background-color: lime;
+    border: 1px #fff solid;
+}
+
+#pink{
+    grid-column: col 3/span 2;
+    grid-row: row 2;
+    background-color: pink;
+    border: 1px #fff solid;
+}
+
+#orange{
+    grid-column: col 1;
+    grid-row: row 3;
+    background-color: orange;
+    border: 1px #fff solid;
+}
+
+#red{
+    grid-column: col 1/span 4;
+    grid-row: row 4;
+    background-color: red;
+    border: 1px #fff solid;
+}
+
+#gray{
+    grid-column: col 2/span 3;
+    grid-row: row 3;
+    background-color: darkslategrey;
+    border: 1px #fff solid;
+}
+
+#albums{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#albums img{
+    width: 200px;
+}
+
+#albums img:hover{
+    flex-grow: .5;
+}
+
+#games img{
+    padding-left: 65px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (min-width: 400px){
+    #albums{
+        flex-wrap: wrap;
+    }
+
+}
